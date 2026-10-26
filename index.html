@@ -1,26 +1,43 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Agentic System Governance</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 100px 20px;
-      background: #f8fafc;
-      color: #1e293b;
-    }
-    h1 { font-size: 42px; }
-    p { font-size: 20px; color: #64748b; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fafaf6">
+  <meta name="description" content="Explore five responsibilities for governing agentic systems: mandate alignment, execution oversight, fault resolution, multi-agent coordination, and auditability assurance.">
+  <title>Governance Wiki · Agentic System Governance</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css?v=20261026-terms">
+  <script defer src="assets/i18n.js"></script>
+  <script defer src="assets/content.js?v=20261026-terms"></script>
+  <script defer src="assets/lab.js?v=20261026-terms"></script>
+  <script defer src="assets/app.js?v=20261026-terms"></script>
 </head>
 <body>
-  <h1>Agentic System Governance</h1>
-  <p>Official Website</p>
-  <p>Research · Agents · Governance</p>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="sidebar-scrim" id="sidebar-scrim"></div>
+<aside class="sidebar" id="sidebar" aria-label="Wiki navigation">
+  <a class="brand" href="#/" aria-label="Governance Wiki home"><svg class="brand-mark" viewBox="0 0 44 44" fill="none" aria-hidden="true"><rect x="2" y="2" width="40" height="40" rx="11" stroke="currentColor" stroke-width="1.4"/><path d="M12 13h7l3 3 3-3h7v17h-7l-3 3-3-3h-7zM22 16v17" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15 19h3m-3 5h3m8-5h3m-3 5h3" stroke="currentColor" stroke-width="1.3"/></svg><span>Governance <em>Wiki</em><small>AGENTIC SYSTEMS</small></span></a>
+  <button class="search-trigger" id="search-trigger"><span data-icon="search"></span><span id="search-trigger-label">Search the Wiki</span><kbd>⌘ K</kbd></button>
+  <nav id="sidebar-nav"></nav>
+  <a class="sidebar-progress" href="#/progress"><span class="progress-caption"><span id="progress-caption-label">Your reading journey</span><span id="progress-count">0 / 11</span></span><span class="progress-track"><span id="progress-fill"></span></span><span class="progress-sub"><span id="progress-sub-label">One idea at a time</span><span>↗</span></span></a>
+  <div class="sidebar-foot"><span class="status-dot"></span><span id="sidebar-foot-label">A growing field guide</span><span>v0.1</span></div>
+</aside>
+<div class="workspace">
+  <header class="topbar">
+    <button id="menu-toggle" class="icon-button mobile-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar" data-icon="menu"></button>
+    <div class="breadcrumb"><span id="breadcrumb-root">Knowledge base</span><span class="crumb-divider">/</span><strong id="breadcrumb-current">Explore</strong></div>
+    <nav class="top-nav" aria-label="Main navigation"><a href="#/" data-top="home">Explore</a><a href="#/path" data-top="path">Learning path</a><a href="#/lab" data-top="lab"><span id="top-lab-label">Lab</span><span class="tiny-dot"></span></a></nav>
+    <div class="top-actions">
+      <nav class="language-switch" aria-label="Language"><a href="?lang=en" data-language="en" lang="en" hreflang="en" aria-label="Read in English">EN</a><span aria-hidden="true">/</span><a href="?lang=zh" data-language="zh" lang="zh-CN" hreflang="zh-CN" aria-label="用中文阅读">中文</a></nav>
+      <a class="github-link" href="https://github.com/Agentic-System-Governance/agentic-system-governance.github.io" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository"><span data-icon="github"></span><span>GitHub</span><span class="external-arrow">↗</span></a><span class="top-separator"></span><button class="icon-button" id="theme-toggle" aria-label="Switch to dark mode" data-icon="moon"></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><a href="#/">Governance Wiki</a><span id="footer-message">Understand the decisions behind accountable autonomous action.</span><a href="#/article/survey-map"><span id="footer-sources-label">Sources and editorial notes</span><span> ↗</span></a></footer>
+</div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-head"><span data-icon="search"></span><label class="sr-only" id="search-title" for="search-input">Search the Wiki</label><input id="search-input" type="search" placeholder="Search concepts, questions, or keywords…" autocomplete="off"><button class="small-button" id="search-close" aria-label="Close search">Esc</button></div><div id="search-results"></div><div class="search-dialog-foot"><span id="search-scope-label">Search all 11 articles</span><span id="search-dismiss-label">Press Esc to close</span></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+<noscript><p class="noscript">Enable JavaScript to read the interactive Wiki, or open the <a href="content/en/foundations.md">Markdown articles</a>.</p></noscript>
 </body>
 </html>
