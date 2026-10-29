@@ -126,7 +126,7 @@
       `<div class="nav-group"><div class="nav-label">${t('从这里开始','Start here')}</div>${navLink('foundations',t('治理对象与职责边界','Foundations and boundaries'),'book')}</div>`+
       `<div class="nav-group"><div class="nav-label">${t('五项治理职责','Five responsibilities')} <span>01 — 05</span></div>${duties.map((a,i)=>navLink(a.id,a.title,null,String(i+1).padStart(2,'0'))).join('')}</div>`+
       `<div class="nav-group"><div class="nav-label">${t('理解与实践','Explore and apply')}</div>${navLink('challenges',t('共同难点','Shared challenges'),'layers')}${navLink('evaluation',t('评估治理效果','Evaluating governance'),'chart')}${navLink('lab',t('交互实验室','Interactive lab'),'flask',null,'#/lab')}${navLink('worksheet',t('治理分析工作表','Governance worksheet'),'pen')}</div>`+
-      `<div class="nav-group"><div class="nav-label">${t('随手查阅','Reference')}</div>${navLink('glossary',t('术语表','Glossary'),'book')}${navLink('survey-map',t('综述与来源','Survey and sources'),'file')}${navLink('library',t('第四章论文库','Chapter 4 paper library'),'layers',null,'resources.html')}${navLink('notes',t('我的笔记','My notes'),'pen',null,'#/notes')}</div>`;
+      `<div class="nav-group"><div class="nav-label">${t('随手查阅','Reference')}</div>${navLink('glossary',t('术语表','Glossary'),'book')}${navLink('survey-map',t('综述与来源','Survey and sources'),'file')}${navLink('papers',t('论文','Papers'),'file',null,'resources.html#papers')}${navLink('stats',t('统计','Stats'),'chart',null,'resources.html#stats')}${navLink('notes',t('我的笔记','My notes'),'pen',null,'#/notes')}</div>`;
     updateProgress();
   }
   function updateProgress() {
