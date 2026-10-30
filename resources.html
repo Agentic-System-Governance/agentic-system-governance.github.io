@@ -263,7 +263,7 @@ a.metric-badge:hover { filter: brightness(0.95); text-decoration: underline; }
 .wmap-card { padding: 20px 20px 16px; }
 .wmap-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding: 4px 6px 10px; }
 .wmap-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--text-muted); }
-.wmap-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 6px; }
+.wmap-legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 6px; transform: none; }
 .wmap-wrap { position: relative; container-type: inline-size; }
 .wmap { display: block; width: 100%; height: auto; }
 .wmap .cty { fill: var(--map-land); stroke: var(--bg); stroke-width: .5; }
@@ -1074,7 +1074,7 @@ a.metric-badge:hover { filter: brightness(0.95); text-decoration: underline; }
       + '<div class="kpi"><div class="kicker">Next scheduled</div><div class="kpi-value">' + (next ? polMonth(next.date) : '—') + '</div><div class="kpi-sub">' + (next ? '<a href="#policies/' + encodeURIComponent(next.p.id) + '">' + esc(next.p.short) + '</a> · ' + esc(next.label) : '') + '</div></div>'
       + '</section>'
       + '<section class="card wmap-card"><div class="wmap-head"><div><div class="kicker">Where they apply</div><h2>Policy map</h2><p class="desc" style="margin:0">Click a jurisdiction or a callout to filter the list below; click an instrument to jump to it.</p></div>'
-      + '<div class="wmap-legend"><span><i style="background:var(--map-eu)"></i>EU member states</span><span><i style="background:var(--map-hit)"></i>National jurisdiction</span><span><i class="kdot k-Law"></i> Law</span><span><i class="kdot k-Treaty"></i> Treaty</span><span><i class="kdot k-Standard"></i> Standard</span><span><i class="kdot k-Guidance"></i> Guidance</span><span><i class="kdot k-Programme"></i> Programme</span></div></div>'
+      + '<div class="wmap-legend"><span><i class="kdot k-Law"></i> Law</span><span><i class="kdot k-Treaty"></i> Treaty</span><span><i class="kdot k-Standard"></i> Standard</span><span><i class="kdot k-Guidance"></i> Guidance</span><span><i class="kdot k-Programme"></i> Programme</span></div></div>'
       + '<div class="wmap-wrap" id="wmap-wrap">' + mapSvg() + callouts() + '</div>'
       + '<div class="juris-row">' + JUR.map(function (j) { return '<button type="button" class="juris-chip" data-pol-jur="' + j.id + '" aria-pressed="false">' + jc(j) + ' ' + esc(j.name) + ' <small>' + POLICIES.filter(function (p) { return p.jur === j.id; }).length + '</small></button>'; }).join('') + '</div></section>'
       + '<section class="stats-grid"><div class="card"><div class="kicker">Coverage</div><h2>Responsibilities addressed</h2><p class="desc">Instruments with at least one provision the survey connects to each responsibility. Click to filter.</p>' + respBars() + '</div>'
